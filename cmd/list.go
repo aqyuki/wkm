@@ -1,8 +1,6 @@
 package cmd
 
 import (
-	"fmt"
-
 	"github.com/aqyuki/wkm/cmd/group"
 	"github.com/aqyuki/wkm/config"
 	"github.com/aqyuki/wkm/logging"
@@ -32,7 +30,6 @@ var ListCmd = &cobra.Command{
 }
 
 func displayDirectories(directories []string) {
-	fmt.Println("displayDirectories")
 	for _, dir := range directories {
 		logging.Plainln(dir)
 	}
